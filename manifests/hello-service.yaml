@@ -1,21 +1,21 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2020-11-12T04:38:44Z"
+  creationTimestamp: "2020-11-12T08:12:07Z"
   finalizers:
     - service.kubernetes.io/load-balancer-cleanup
   labels:
     app: hello-app
   name: hello-app-service
   namespace: default
-  resourceVersion: "368259"
+  resourceVersion: "422579"
   selfLink: /api/v1/namespaces/default/services/hello-app-service
-  uid: 94b63928-1de9-44e6-af04-4037a632d000
+  uid: 1d08eaae-7015-4b3b-a8c6-6d41a2639dee
 spec:
-  clusterIP: 10.3.254.224
+  clusterIP: 10.3.241.68
   externalTrafficPolicy: Cluster
   ports:
-    - nodePort: 32297
+    - nodePort: 30536
       port: 80
       protocol: TCP
       targetPort: 8080
@@ -26,4 +26,4 @@ spec:
 status:
   loadBalancer:
     ingress:
-      - ip: 34.64.245.122
+      - ip: 34.64.233.162
