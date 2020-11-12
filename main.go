@@ -46,34 +46,31 @@ func main() {
 func getLargestPrimeFactor(w http.ResponseWriter, r *http.Request) {
 	input := r.URL.Query().Get("input")
 	n, _ := strconv.Atoi(input) // convert string to int
-
-	if n < 1 {
-		fmt.Fprintf(w, "The input is %d has no prime factor\n", n)
-		return
-	}
-
 	var maxPrime int = -1
 
-	for n%2 == 0 {
-		maxPrime = 2
-		n /= 2
-	}
-	m := float64(n)
-	var sqrt float64 = math.Sqrt(m)
-	var abs int = int(sqrt)
-	for i := 3; i <= abs+1; i += 2 {
-		for n%i == 0 {
-			maxPrime = i
-			n = n / i
+	if n < 2 {
+		fmt.Fprintf(w, "The input is %d has no prime factor\n", n)
+	} else {
+		for n%2 == 0 {
+			maxPrime = 2
+			n /= 2
 		}
-	}
-	if n > 2 {
-		maxPrime = n
-	}
+		m := float64(n)
+		var sqrt float64 = math.Sqrt(m)
+		var abs int = int(sqrt)
+		for i := 3; i <= abs+1; i += 2 {
+			for n%i == 0 {
+				maxPrime = i
+				n = n / i
+			}
+		}
+		if n > 2 {
+			maxPrime = n
+		}
 
-	fmt.Fprintf(w, "The input is %s\n", input)
-	fmt.Fprintf(w, "The largest prime factor is %d\n", int(maxPrime))
-
+		fmt.Fprintf(w, "The input is %s\n", input)
+		fmt.Fprintf(w, "The largest prime factor is %d\n", int(maxPrime))
+	}
 }
 
-// [END container_hello_app]
+	// [END container_hello_app]
