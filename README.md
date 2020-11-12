@@ -1,26 +1,31 @@
-# Hello Application example
+# Docker-Kubernetes Web Application   
 
-This example shows how to build and deploy a containerized Go web server
-application using [Kubernetes](https://kubernetes.io).
+**ABSTRACT**   
 
-Visit https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app
-to follow the tutorial and deploy this application on [Google Kubernetes
-Engine](https://cloud.google.com/kubernetes-engine).
+This is the application which returns the largest prime factor of the given input in URL.
+And I've packaged the web application in a Docker container image, and run it on GKE(Google Kubernetes Engine) cluster.
+Then, deployed the web application. 
+All these are all based on _[THIS TUTORIAL](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app)_.
 
+## 1. Result      
+
+
+## 2. Files Contained   
 This directory contains:
 
-- `main.go` contains the HTTP server implementation. It responds to all HTTP
-  requests with a  `Hello, world!` response.
-- `Dockerfile` is used to build the Docker image for the application.
+- `main.go`    
+  It contains the HTTP server implementation. It responds to HTTP
+  requests that contains `?input=${inputValue}` with responses as follows:
+  ```
+    The input is ${inputValue}   
+    The largest prime factor is ${maxPrime}
+  ```   
+  
+- `Dockerfile`   
+  It is used to build the Docker image for the application.
 
-This application is available as two Docker images, which respond to requests
-with different version numbers:
 
-- `gcr.io/google-samples/hello-app:1.0`
-- `gcr.io/google-samples/hello-app:2.0`
+- `hello-deployment.yaml`   
 
-This example is used in many official/unofficial tutorials, some of them
-include:
-- [Kubernetes Engine Quickstart](https://cloud.google.com/kubernetes-engine/docs/quickstart)
-- [Kubernetes Engine - Deploying a containerized web application](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app) tutorial
-- [Kubernetes Engine - Setting up HTTP Load Balancing](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer) tutorial
+- `hello-service.yaml`   
+
