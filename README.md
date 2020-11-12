@@ -13,13 +13,12 @@ You can access to the application with following URL:
    [http://34.64.233.162/?input=13195](http://34.64.233.162/?input=13195)   
       
 
-This shows result like the image above.   
+This shows the result like the image below(_**Example 1**_).   
 And also, you can check if it works by changing the inputs as follows:   
 
 ### Example 1: `input = 13195`   
 
 <img width=800 src="https://github.com/SeiwonPark/Docker-Kubernetes/blob/main/images/image1.png">   
-
 
 ### Example 2: `input = 0`   
 
