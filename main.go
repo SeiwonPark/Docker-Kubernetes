@@ -49,7 +49,7 @@ func getLargestPrimeFactor(w http.ResponseWriter, r *http.Request) {
 	var maxPrime int = -1
 
 	if n < 2 {
-		fmt.Fprintf(w, "The input is %s has no prime factor\n", input)
+		fmt.Fprintf(w, "The input is %d has no prime factor\n", n)
 	} else {
 		for n%2 == 0 {
 			maxPrime = 2
