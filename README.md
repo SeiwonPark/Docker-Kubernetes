@@ -10,9 +10,7 @@ All these are all based on _[THIS TUTORIAL](https://cloud.google.com/kubernetes-
 ## 1. Result      
 You can access to the application with following URL:   
    
-[http://34.64.245.122/?input=13195](http://34.64.245.122/?input=13195)   
-
-<img width=1000 src="https://github.com/SeiwonPark/Docker-Kubernetes/blob/main/images/example1.png" >   
+      
 
 This shows result like the image above.   
 And also, you can check if it works by changing the inputs as follows:   
@@ -20,7 +18,7 @@ And also, you can check if it works by changing the inputs as follows:
 ### Example 1: `input = 100`   
 
 
-### Example 2: `input = 12345678`   
+### Example 2: `input = 123456`   
 
 
 ### Example 3: `input = 0`   
