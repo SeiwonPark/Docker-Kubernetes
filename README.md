@@ -47,6 +47,10 @@ This directory contains:
     The input is ${inputValue}   
     The largest prime factor is ${maxPrime}
   ```   
+  or if has no prime factor,   
+  ```
+    The input is ${inputValue} has no prime factor
+  ```
   
 - `Dockerfile`   
   It is used to build the Docker image for the application.
