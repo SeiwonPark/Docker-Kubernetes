@@ -48,7 +48,7 @@ func getLargestPrimeFactor(w http.ResponseWriter, r *http.Request) {
 	n, _ := strconv.Atoi(input) // convert string to int
 
 	if n < 1 {
-		fmt.Fprintf(w, "The input is %s has no prime factor\n", input)
+		fmt.Fprintf(w, "The input is %d has no prime factor\n", n)
 		return
 	}
 
