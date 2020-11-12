@@ -47,6 +47,11 @@ func getLargestPrimeFactor(w http.ResponseWriter, r *http.Request) {
 	input := r.URL.Query().Get("input")
 	n, _ := strconv.Atoi(input) // convert string to int
 
+	if n < 1 {
+		fmt.Fprintf(w, "The input is %s has no prime factor\n", input)
+		return
+	}
+
 	var maxPrime int = -1
 
 	for n%2 == 0 {
