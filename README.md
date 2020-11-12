@@ -18,17 +18,25 @@ And also, you can check if it works by changing the inputs as follows:
 
 ### Example 1: `input = 13195`   
 
+<img width=800 src="https://github.com/SeiwonPark/Docker-Kubernetes/blob/main/images/image1.png">   
+
 
 ### Example 2: `input = 0`   
 
+<img width=800 src="https://github.com/SeiwonPark/Docker-Kubernetes/blob/main/images/image2.png">   
 
 ### Example 3: `input = 1000000`   
 
+<img width=800 src="https://github.com/SeiwonPark/Docker-Kubernetes/blob/main/images/image3.png">   
 
 ### Example 4: `input = 100`   
 
+<img width=800 src="https://github.com/SeiwonPark/Docker-Kubernetes/blob/main/images/image4.png">   
 
 ### Example 5: `input = 123456`   
+
+<img width=800 src="https://github.com/SeiwonPark/Docker-Kubernetes/blob/main/images/image5.png">   
+
 
 ## 2. Files Contained   
 This directory contains:
