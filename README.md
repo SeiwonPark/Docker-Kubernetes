@@ -10,8 +10,7 @@ All these are all based on _[THIS TUTORIAL](https://cloud.google.com/kubernetes-
 ## 1. Result      
 You can access to the application with following URL:   
 
-   [http://34.64.233.162/?input=13195](http://34.64.233.162/?input=13195)   
-      
+<del>   [http://34.64.233.162/?input=13195](http://34.64.233.162/?input=13195)</del>  **(To avoid incurring charges to my GCP account for the resources, I've deleted the service.)**   
 
 This shows the result like the image below(_**Example 1**_).   
 And also, you can check if it works by changing the inputs as follows:   
